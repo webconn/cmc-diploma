@@ -1,3 +1,7 @@
+# Directories
+MKIO
+info-sources
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
