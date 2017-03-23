@@ -35,8 +35,10 @@
     
     <restricts>
         <!-- restrics -->
-        <restrict type="" level="">
+        <restrict messageId="" type="" level="" value="">
             <!-- special restriction params -->
+            <param name="" value="" />
+            <!-- ... -->
         </restrict>
         <!-- ... -->
     </restricts>
