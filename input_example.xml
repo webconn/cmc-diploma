@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<piv version="1.1">
+    <signals>
+        <!-- ...signals -->
+        <signal identifier="" type="" signed="">
+            <restrict type="" value="" level="" />
+            <!-- ... -->
+        </signal>
+        <!-- ... -->
+    </signals>
+    
+    <abonents>
+        <!-- ...abonents -->
+        <abonent identifier="" mil1553_addr="">
+            <!-- ...type_messages -->
+            <mil1553_messages>
+                <!-- controller messages -->
+                <mil1553_contrMessage identifier="" direction="" addr="" subaddr="" numWords="">
+                    <!-- ...bitfields -->
+                    <bitfield identifier="" signal="" firstWord="" firstBit="" numBits="" lowerBitCost="" />
+                    <!-- ... -->
+                </mil1553_contrMessage>
+                
+                <!-- terminal messages -->
+                <mil1553_termMessage identifier="" direction="" subaddr="" numWords="">
+                    <!-- ...bitfields -->
+                    
+                </mil1553_termMessage>
+            </mil1553_messages>
+            <!-- ... -->
+        </abonent>
+        <!-- ... -->
+    </abonents>
+    
+    <restricts>
+        <!-- restrics -->
+        <restrict type="" level="">
+            <!-- special restriction params -->
+        </restrict>
+        <!-- ... -->
+    </restricts>
+</piv>
