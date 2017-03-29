@@ -1,0 +1,3 @@
+<signal identifier="signal1">
+    <restrict type="smooth" level="error" value="0.25" /> 
+</signal>

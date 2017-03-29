@@ -1,0 +1,3 @@
+<restrict messageId="message_id" type="frequency" level="warning" value="10.0">
+    <param name="max_deviation" value="1.0" />
+</restrict>

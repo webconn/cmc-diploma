@@ -1,0 +1,13 @@
+<signal identifier="signal1">
+    <restrict type="bind" level="error">
+        <param name="group" value="group1" />
+        <param name="measureError" value="5%" />
+    </restrict>
+</signal>
+
+<signal identifier="signal2">
+    <restrict type="bind" level="error">
+        <param name="group" value="group1" />
+        <param name="measureError" value="0.3" />
+    </restrict>
+</signal>

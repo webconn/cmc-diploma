@@ -1,0 +1,15 @@
+<restrict messageId="message1" type="sequence" level="warning">
+    <param name="sequenceId" value="sequence1" />
+    <param name="order" value="1" />
+</restrict>
+<restrict messageId="message2" type="sequence" level="warning">
+    <param name="sequenceId" value="sequence1" />
+    <param name="order" value="2" />
+</restrict>
+
+<!-- ... -->
+
+<restrict messageId="messageN" type="sequence" level="warning">
+    <param name="sequenceId" value="sequence1" />
+    <param name="order" value="N" />
+</restrict>
