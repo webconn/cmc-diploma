@@ -4,6 +4,6 @@
 
 <signal identifier="signal2">
     <restrict type="const" level="error" value="120.0">
-        <param type="max_deviation" value="2.0" />
+        <param type="maxDeviation" value="2.0" />
     </restrict>
 </signal>

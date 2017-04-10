@@ -1,0 +1,6 @@
+<restrict messageId="message_id" type="checksum" level="warning">
+    <param name="function" value="crc8" />
+    <param name="dataStart" value="0" />
+    <param name="dataSize" value="8" />
+    <param name="checksumStart" value="8" />
+</restrict>

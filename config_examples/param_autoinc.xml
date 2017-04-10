@@ -1,0 +1,5 @@
+<signal identifier="signal1">
+    <restrict type="autoincrement" level="error">
+        <param name="timeout" value="1s" />
+    </restrict>
+</signal>

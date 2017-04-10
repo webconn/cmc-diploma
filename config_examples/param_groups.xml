@@ -1,13 +1,15 @@
 <signal identifier="signal1">
     <restrict type="bind" level="error">
-        <param name="group" value="group1" />
+        <param name="groupId" value="group1" />
         <param name="measureError" value="5%" />
+        <param name="timeout" value="10s" />
     </restrict>
 </signal>
 
 <signal identifier="signal2">
     <restrict type="bind" level="error">
-        <param name="group" value="group1" />
+        <param name="groupId" value="group1" />
         <param name="measureError" value="0.3" />
+        <param name="timeout" value="1s" />
     </restrict>
 </signal>
