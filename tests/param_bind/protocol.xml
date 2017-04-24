@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+
+<piv version="1.1">
+        <signals>
+            <signal identifier="int42_2" type="int" signed="false" />
+            <signal identifier="int42_3" type="int" signed="false" />
+        </signals>
+        
+        <abonents>
+            <abonent identifier="src1" mil1553_addr="2">
+                <mil1553_messages>
+                    <mil1553_contrMessage identifier="src1_msg2" direction="input" addr="2" subaddr="3" numWords="4">
+                        <bitfield identifier="int" signal="int42_2" firstWord="2" firstBit="20" numBits="8" lowerBitCost="1">
+                            <restrict type="bind" level="warning">
+                                <param name="groupId" value="int42" />
+                                <param name="timeout" value="1s" />
+                            </restrict>
+                        </bitfield>
+                    </mil1553_contrMessage>
+                    
+                    <mil1553_contrMessage identifier="src1_msg3" direction="input" addr="2" subaddr="4" numWords="4">
+                        <bitfield identifier="int" signal="int42_3" firstWord="2" firstBit="20" numBits="8" lowerBitCost="1">
+                            <restrict type="bind" level="warning">
+                                <param name="groupId" value="int42" />
+                                <param name="timeout" value="1s" />
+                            </restrict>
+                        </bitfield>
+                    </mil1553_contrMessage>
+                </mil1553_messages>
+            </abonent>
+        </abonents>
+</piv>
