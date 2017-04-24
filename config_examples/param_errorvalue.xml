@@ -1,0 +1,3 @@
+<signal identifier="signal1">
+    <restrict type="error_value" level="error" value="0xDEAD" /> 
+</signal>
