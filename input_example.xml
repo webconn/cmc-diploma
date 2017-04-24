@@ -3,10 +3,7 @@
 <piv version="1.1">
     <signals>
         <!-- ...signals -->
-        <signal identifier="" type="" signed="">
-            <restrict type="" value="" level="" />
-            <!-- ... -->
-        </signal>
+        <signal identifier="" type="" signed="" twosComplement="" />
         <!-- ... -->
     </signals>
     
@@ -18,7 +15,10 @@
                 <!-- controller messages -->
                 <mil1553_contrMessage identifier="" direction="" addr="" subaddr="" numWords="">
                     <!-- ...bitfields -->
-                    <bitfield identifier="" signal="" firstWord="" firstBit="" numBits="" lowerBitCost="" />
+                    <bitfield identifier="" firstWord="" firstBit="" numBits="" lowerBitCost="">
+                        <restrict type="" value="" level="" />
+                        <!-- ... -->
+                    </bitfield>
                     <!-- ... -->
                 </mil1553_contrMessage>
                 
