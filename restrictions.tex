@@ -17,10 +17,8 @@
 в процентах (с суффиксом '\%'). По умолчанию - 5\%.
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Частота появления 
-сообщения]{config_examples/msg_frequency.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{msg_frequency} в приложении~\ref{sec:listings}.
 
 \subsubsection{Ошибочные состояния}
 
@@ -30,10 +28,9 @@
 
 Параметров у ограничения нет.
 
-Описание ограничения в файле протокола:
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{msg_errors} в приложении~\ref{sec:listings}.
 
-\lstinputlisting[caption=Ошибочные состояния 
-сообщения]{config_examples/msg_errors.xml}
 
 \subsubsection{Последовательность сообщений}
 
@@ -70,10 +67,8 @@
  \item order - номер сообщения в последовательности.
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Последовательность 
-сообщений]{config_examples/msg_sequence.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{msg_sequence} в приложении~\ref{sec:listings}.
 
 В случае несовпадения параметра level у описаний одной и той же 
 последовательности, пользователь получит предупреждение, при этом будет выбрано 
@@ -99,10 +94,8 @@
 Подразумевается, что длина поля контрольной суммы известна по функции подсчёта.
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Проверка контрольной 
-суммы]{config_examples/msg_crc.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{msg_crc} в приложении~\ref{sec:listings}.
 
 \subsection{Ограничения для параметров}
 \label{subsec:param_restricts}
@@ -122,10 +115,8 @@ ParameterContainer::ParamValue.
  \item \textit{value} - требуемое минимальное значение частоты в герцах (Гц);
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Частота появления 
-сообщения]{config_examples/param_frequency.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{param_frequency} в приложении~\ref{sec:listings}.
 
 \subsubsection{Пороговые значения}
 
@@ -151,10 +142,8 @@ ParameterContainer::ParamValue.
  \item \textit{value} - пороговое значение.
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Пороговые значения 
-параметра]{config_examples/param_thresholds.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{param_thresholds} в приложении~\ref{sec:listings}.
 
 
 \subsubsection{Равенство константе}
@@ -169,10 +158,8 @@ ParameterContainer::ParamValue.
 абсолютной величине (по модулю). По умолчанию - 0.
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Равенство значения параметра 
-константе]{config_examples/param_const.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{param_const} в приложении~\ref{sec:listings}.
 
 
 \subsubsection{Ошибочное значение}
@@ -185,10 +172,9 @@ ParameterContainer::ParamValue.
  \item \textit{value} - ошибочное значение.
 \end{itemize}
 
-Описание ограничения в файле протокола:
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{param_errorvalue} в приложении~\ref{sec:listings}.
 
-\lstinputlisting[caption=Ошибочное значение 
-параметра]{config_examples/param_errorvalue.xml}
 
 \subsubsection{Гладкость}
 
@@ -214,10 +200,8 @@ $
 модулю).
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Гладкость значения 
-параметра]{config_examples/param_smooth.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{param_smooth} в приложении~\ref{sec:listings}.
 
 
 \subsubsection{Связанные параметры}
@@ -264,9 +248,8 @@ $
  \item timeout - время жизни последнего полученного значения.
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Связанные параметры]{config_examples/param_groups.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{param_groups} в приложении~\ref{sec:listings}.
 
 В случае несовпадения параметра level у описаний одной и той же 
 группы связанных параметров, пользователь получит предупреждение, при этом 
@@ -286,6 +269,5 @@ $
 значение параметра может оставаться неизменным.
 \end{itemize}
 
-Описание ограничения в файле протокола:
-
-\lstinputlisting[caption=Автоинкремент]{config_examples/param_autoinc.xml}
+Пример описания ограничения в файле протокола приведён в 
+листинге~\ref{param_autoinc} в приложении~\ref{sec:listings}.
