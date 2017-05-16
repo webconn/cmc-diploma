@@ -1,5 +1,5 @@
 <restrict messageId="message_id" type="checksum" level="warning">
-    <param name="function" value="crc16" />
+    <param name="function" value="crc16-ccitt" />
     <param name="dataStart" value="0" />
     <param name="dataSize" value="8" />
     <param name="checksumWord" value="8" />

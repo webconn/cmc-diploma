@@ -1,3 +1,1 @@
-<signal identifier="signal1">
-    <restrict type="minFrequency" level="error" value="1.0" /> 
-</signal>
+<restrict type="minFrequency" level="error" value="1.0" /> 

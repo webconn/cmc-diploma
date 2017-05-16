@@ -7,6 +7,11 @@
         </signals>
         
         <abonents>
+            <abonent identifier="src0" mil1553_addr="1">
+                <mil1553_messages>
+                    <mil1553_contrMessage identifier="crc_msg" direction="output" addr="1" subaddr="6" numWords="4" />
+                </mil1553_messages>
+            </abonent>
             <abonent identifier="src1" mil1553_addr="2">
                 <mil1553_messages>
                     <mil1553_contrMessage identifier="src1_msg2" direction="input" addr="2" subaddr="3" numWords="4">
@@ -15,6 +20,8 @@
                                 <param name="groupId" value="int42" />
                                 <param name="timeout" value="1s" />
                             </restrict>
+                            <restrict type="minFrequency" level="warning" value="3.3" />
+                            <restrict type="const" level="error" value="66" />
                         </bitfield>
                     </mil1553_contrMessage>
                     
@@ -24,9 +31,43 @@
                                 <param name="groupId" value="int42" />
                                 <param name="timeout" value="1s" />
                             </restrict>
+                            <restrict type="const" level="error" value="66" />
                         </bitfield>
                     </mil1553_contrMessage>
                 </mil1553_messages>
             </abonent>
+            <abonent identifier="src2" mil1553_addr="5">
+                <mil1553_messages>
+                    <mil1553_termMessage identifier="buggy" direction="output" subaddr="5" numWords="8">
+                    </mil1553_termMessage>
+                </mil1553_messages>
+            </abonent>
+            <abonent identifier="src3" mil1553_addr="6">
+                <mil1553_messages>
+                    <mil1553_termMessage identifier="buggy" direction="input" subaddr="5" numWords="8">
+                    </mil1553_termMessage>
+                </mil1553_messages>
+            </abonent>
         </abonents>
+        
+        <restricts>
+            <restrict messageId="src1_msg2" type="frequency" level="warning" value="3.3" />
+            <restrict messageId="buggy" type="errors" level="error" />
+            <restrict messageId="crc_msg" type="checksum" level="error">
+                <param name="function" value="crc16-ccitt" />
+                <param name="dataStart" value="1" />
+                <param name="dataSize" value="3" />
+                <param name="checksumWord" value="0" />
+            </restrict>
+            
+            <!-- order -->
+            <restrict messageId="src1_msg2" type="sequence" level="warning">
+                <param name="sequenceId" value="seq1" />
+                <param name="order" value="1" />
+            </restrict>
+            <restrict messageId="src1_msg3" type="sequence" level="warning">
+                <param name="sequenceId" value="seq1" />
+                <param name="order" value="2" />
+            </restrict>
+        </restricts>
 </piv>

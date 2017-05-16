@@ -1,7 +1,7 @@
-<signal identifier="signal1">
+<!-- bitfield 1 -->
     <restrict type="max" level="error" value="10.0" /> 
     <restrict type="max" level="warning" value="9.0" />
     
     <restrict type="min" level="warning" value="2.0" />
     <restrict type="min" level="error" value="1.0" />
-</signal>
+<!-- /bitfield 1 -->

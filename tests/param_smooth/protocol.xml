@@ -2,7 +2,7 @@
 
 <piv version="1.1">
         <signals>
-            <signal identifier="sine100_3" type="int" signed="true" twosComplement="true" />
+            <signal identifier="int42_3" type="int" signed="true" twosComplement="true" />
         </signals>
         
         <abonents>
@@ -13,6 +13,9 @@
                             <restrict type="smooth" value="1000" level="warning">
                                 <param name="maxDeviation" value="0" />
                             </restrict>
+                            <restrict type="max" level="error" value="55000" />
+                            <restrict type="max" level="warning" value="50000" />
+                            <restrict type="min" level="warning" value="25000" />
                         </bitfield>
                     </mil1553_contrMessage>
                 </mil1553_messages>
